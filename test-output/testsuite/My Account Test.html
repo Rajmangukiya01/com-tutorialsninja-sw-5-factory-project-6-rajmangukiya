@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  My Account Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>My Account Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 13 19:22:15 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>68 seconds (68413 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.MyAccountPageTest.verifyUserShouldNavigateToLoginPageSuccessfully()'><b>verifyUserShouldNavigateToLoginPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.MyAccountPageTest<br/>
+<a href="#Output-1690294013" onClick='toggleBox("Output-1690294013", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1690294013" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1690294013">
+click On MyAccount Link [[ChromeDriver: chrome on WINDOWS (9247726fd027766b9f8def60c66209f1)] -> xpath: //span[contains(text(),'My Account')]]<br/>
+getReturningCustomerMessage[[ChromeDriver: chrome on WINDOWS (9247726fd027766b9f8def60c66209f1)] -> xpath: //h2[contains(text(),'Returning Customer')]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.MyAccountPageTest@401e7803</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.MyAccountPageTest.verifyUserShouldNavigateToRegisterPageSuccessfully()'><b>verifyUserShouldNavigateToRegisterPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.MyAccountPageTest<br/>
+<a href="#Output-2112373743" onClick='toggleBox("Output-2112373743", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2112373743" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2112373743">
+click On MyAccount Link [[ChromeDriver: chrome on WINDOWS (979a55ad0b5a75a7cf394d6a63abad69)] -> xpath: //span[contains(text(),'My Account')]]<br/>
+getRegisterAccountMessage[[ChromeDriver: chrome on WINDOWS (979a55ad0b5a75a7cf394d6a63abad69)] -> xpath: //h1[contains(text(),'Register Account')]]<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.tutorialsninja.testsuite.MyAccountPageTest@401e7803</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.MyAccountPageTest.verifyThatUserShouldLoginAndLogoutSuccessfully()'><b>verifyThatUserShouldLoginAndLogoutSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.MyAccountPageTest<br/>
+<a href="#Output-178325065" onClick='toggleBox("Output-178325065", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-178325065" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-178325065">
+click On MyAccount Link [[ChromeDriver: chrome on WINDOWS (be07bedc2c029bdd55c37da78fba58c7)] -> xpath: //span[contains(text(),'My Account')]]<br/>
+Enter harry111@gmail.com EmailId[[ChromeDriver: chrome on WINDOWS (be07bedc2c029bdd55c37da78fba58c7)] -> id: input-email]<br/>
+Enter Password Harry123 in password field[[ChromeDriver: chrome on WINDOWS (be07bedc2c029bdd55c37da78fba58c7)] -> id: input-password]<br/>
+clickOnLogin[[ChromeDriver: chrome on WINDOWS (be07bedc2c029bdd55c37da78fba58c7)] -> xpath: //form[contains(@action,'login')]//input[@type='submit']]<br/>
+clickOnMyAccountTab[[ChromeDriver: chrome on WINDOWS (be07bedc2c029bdd55c37da78fba58c7)] -> xpath: //span[contains(text(),'My Account')]]<br/>
+getAccountLogoutMessage[[ChromeDriver: chrome on WINDOWS (be07bedc2c029bdd55c37da78fba58c7)] -> xpath: //h1[contains(text(),'Account Logout')]]<br/>
+click On Continue Button3[[ChromeDriver: chrome on WINDOWS (be07bedc2c029bdd55c37da78fba58c7)] -> xpath: //a[contains(text(),'Continue')]]<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialsninja.testsuite.MyAccountPageTest@401e7803</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.MyAccountPageTest.verifyThatUserRegisterAccountSuccessfully()'><b>verifyThatUserRegisterAccountSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.MyAccountPageTest<br/>
+<a href="#Output-1460696714" onClick='toggleBox("Output-1460696714", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1460696714" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1460696714">
+click On MyAccount Link [[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> xpath: //span[contains(text(),'My Account')]]<br/>
+Enter First Name Harry in field[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> id: input-firstname]<br/>
+Enter First Name potter in field[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> id: input-lastname]<br/>
+Enter harry115@gmail.com EmailId[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> id: input-email]<br/>
+Enter 07734227890Phone Number[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> id: input-telephone]<br/>
+Enter Password Harry123 in password field[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> id: input-password]<br/>
+enter ConfirmPassword [[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> id: input-confirm]<br/>
+clickSubscribeOnYesRadioButton [[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> xpath: //input[@name='newsletter']]<br/>
+clickOnPrivacyPolicyCheckBox[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> xpath: //div[@class = 'buttons']//input[@name='agree']]<br/>
+clickOnContinue1[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> xpath: //div[@class = 'buttons']//input[@value='Continue']]<br/>
+getAccountCreatedMessage[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> xpath: //h1[contains(text(),'Your Account Has Been Created!')]]<br/>
+clickOnContinueButton2[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> xpath: //a[contains(text(),'Continue')]]<br/>
+clickOnMyAccountTab[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> xpath: //span[contains(text(),'My Account')]]<br/>
+getAccountLogoutMessage[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> xpath: //h1[contains(text(),'Account Logout')]]<br/>
+click On Continue Button3[[ChromeDriver: chrome on WINDOWS (8e6661494d5c7639daa43023d29d6fae)] -> xpath: //a[contains(text(),'Continue')]]<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.tutorialsninja.testsuite.MyAccountPageTest@401e7803</td></tr>
+</table><p>
+</body>
+</html>
